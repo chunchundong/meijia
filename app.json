@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/people/index",
+    "pages/about/index",
+    "pages/detail/detail",
+    "pages/order/order",
+    "pages/peopleDetail/peopleDetail",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d24a58",
+    "navigationBarTitleText": "美甲商城",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d24a58",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index_icon.png",
+      "selectedIconPath": "images/index_icon_HL.png"
+    },
+    {
+      "pagePath": "pages/people/index",
+      "text": "技师",
+      "iconPath": "images/skill_icon.png",
+      "selectedIconPath": "images/skill_icon_HL.png"
+    },{
+      "pagePath": "pages/about/index",
+      "text": "我的",
+      "iconPath": "images/user_icon.png",
+      "selectedIconPath": "images/user_icon_HL.png"
+    }]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

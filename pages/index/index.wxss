@@ -1,0 +1,85 @@
+/**index.wxss**/
+.container swiper-item image{
+  width: 100%;
+}
+.nav_top{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  padding: 20rpx 0;
+}
+.item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  /* 内容居中显示 */
+  align-items: center;
+}
+.item image{
+  width: 80rpx;
+  height: 86rpx;
+}
+.active_pink{color: #e5004f;}
+.active_orange{color:#eb6100 ;}
+.active_yellow{color:#fff100; }
+.active_green{color:#8fc31f }
+.active_purple{color:#aa2adf}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.contentList{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 24rpx;
+}
+.contentList image{
+  width: 138rpx;
+  height: 158rpx;
+  display: inline-block;
+}
+.texts{
+ width: 443rpx;
+ padding: 8rpx 20rpx 0;
+}
+.order{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #d24a58;
+  color: white;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 50%;
+  align-items: center;
+  font-size: 26rpx;
+  margin-top: 40rpx;
+}
+.price{
+  color: #d24a58;
+  font-size: 35rpx;
+  padding-top: 20rpx;
+}
+.message{
+  font-size: 30rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  color: #ccc;
+}
+.subject{
+  font-size: 28rpx;
+}
+
+.scroll{
+  height: 1400rpx;
+  display: flex;
+}

@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<view class='container'>
+  <image src='../../images/banner_03.jpg'></image>
+  <view class='content'>
+    <view>
+      <text class='title'>睫毛稀疏 种睫毛来帮忙</text>
+      <text class='price'>价格：￥100</text>
+      <text class='msg'>先的企业级云服务商,致力于打造以数据为核心的场景化 PaaS服务先的企业级云服务商,致力于打造以数据为核心的场景化 PaaS服务</text>
+    </view>
+    <view class='detail'>
+      <text class='title'>详情描述</text>
+      <view class='msg'>美甲网站美甲帮提供美甲图片2018新款式,简单好看的美甲图片、美甲教程视频、美甲最新款式,包括法式美甲、日式美甲、光疗美甲等美甲图片和美甲知识,美甲APP应用,美甲2019美甲网站美甲帮提供美甲图片2018新款式,简单好看的美甲图片、美甲教程视频、美甲最新款式,包括法式美甲、日式美甲、光疗美甲等美甲图片和美甲知识,美甲APP应用,美甲2019</view>
+    </view>
+
+    <button class='buyOrOrder'>立即购买</button>
+  </view>
+</view>

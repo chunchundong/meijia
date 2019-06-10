@@ -1,0 +1,17 @@
+<!--pages/peopleDetail/peopleDetail.wxml-->
+<view class='container'>
+  <view class='head'>
+    <image src='../../images/banner_02.jpg'></image>
+  </view>
+
+  <view class='contant'>
+    <view class='title'>美甲师</view>
+    <view class='msg'>美甲是一种对指（趾）甲进行装饰美化的工作，又称甲艺设计，具有表现形式多样化的特点。美甲是根据客人的手形、甲形、肤质、服装的色彩和要求，对指（趾）甲进行消毒、清洁、护</view>
+    <view class='title_h1'>【服务内容】</view>
+    <view wx:for="{{serviceList}}" class='lists'>
+      <view>{{item.serviceName}}</view>
+      <view class='price'>{{item.servicePrice}}</view>
+      <view bindtap='toOrder'>预约</view>
+    </view>
+  </view>
+</view>

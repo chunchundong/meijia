@@ -1,0 +1,29 @@
+<!--pages/people/index.wxml-->
+<view class='container'>
+  <view class='search'>
+    <picker bindchange="bindPickerChange" value="{{breedIndex}}" range="{{breedList}}">
+      <input type='text' value='{{breedList[breedIndex]}}'></input>
+    </picker>
+  </view>
+
+  <view class='contents'>
+    <block wx:if="{{peopleList}}">
+      <view wx:for="{{peopleList}}" wx:key="this" class='items' bindtap='toPeopleDetail'>
+        <view class='image'>
+          <image src='{{item.avatar}}'></image>
+        </view>
+
+        <view class='txts'>
+          <text class='head'>{{item.company}}</text>
+          <view class='name'>{{item.nickname}}<text>{{item.price}}</text></view>
+          <text class='mag'>{{item.message}}</text>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <text>暂无数据</text>
+    </block>
+  
+  </view>
+
+</view>

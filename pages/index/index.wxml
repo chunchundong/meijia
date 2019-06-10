@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true" bindscrolltolower="loadMore" class='scroll'>
+    <!-- 轮播图 -->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+      <block wx:for="{{imgUrls}}" wx:key="this">
+        <swiper-item>
+          <block wx:if="{{item}}">
+            <image src="{{item}}" class="slide-image" />
+          </block>
+          <block>
+            <image src='../../images/default_pic.png'></image>
+          </block>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <!-- 菜单栏 -->
+    <view class='nav_top'>
+      <block wx:for="{{navLists}}" wx:key="this">
+        <view class="item {{clickNav == item.id ? 'active_' + colors[colorIndex] : ''}}" bindtap='changeNav' data-index='{{index}}' data-item='{{item.id}}'>
+          <image src='{{item.imgUrl}}'></image>
+          <text>{{item.navTitle}}</text>
+        </view>
+      </block>
+    </view>
+
+    <!-- 内容列表 -->
+    <view class='contents'>
+      <block wx:if="{{contentLists[clickNav]}}">
+        <block wx:for="{{contentLists[clickNav]}}" wx:key="this">
+          <view class='contentList'>
+            <image src='{{item.civerpath}}' bindtap='toDetail'></image>
+            <view class='texts' bindtap='toDetail'>
+              <text class='subject'>{{item.subject}}</text>
+              <view class='price'>{{item.price}}</view>
+              <text class='message'>{{item.message}}</text>
+            </view>
+            <view class='order' bindtap='order'>预约</view>
+          </view>
+        </block>
+      </block>
+      <block wx:else>
+        <text>维护中，暂未开放</text>
+      </block>
+    </view>
+
+  </scroll-view>
+</view>

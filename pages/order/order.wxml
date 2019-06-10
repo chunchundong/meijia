@@ -1,0 +1,42 @@
+<!--pages/order/order.wxml-->
+<view class='container'>
+  <view class='head'>
+    <image src='../../images/banner_04.jpg'></image>
+  </view>
+
+  <view class='content'>
+    <!-- 选择技师 -->
+    <view class="people">
+      <view class="section__title">请选择技师</view>
+      <picker bindchange="bindPeopleChange" value="{{peopleIndex}}" range="{{peoples}}">
+        <view class="picker">
+          {{peoples[peopleIndex]}}
+        </view>
+      </picker>
+    </view>
+
+    <!-- 选择日期 -->
+    <view class="data">
+      <view class="section__title">请选择日期</view>
+      <picker bindchange="bindDataChange" value="{{dataIndex}}" mode="date">
+        <view class="picker">
+          {{dataIndex}}
+        </view>
+      </picker>
+    </view>
+
+    <!-- 选择时间 -->
+    <view class="time">
+      <view class="section__title">请选择时间</view>
+      <picker bindchange="bindTimeChange" value="{{timeIndex}}" mode="time">
+        <view class="picker">
+          {{timeIndex}}
+        </view>
+      </picker>
+    </view>
+
+    <button class='buyOrOrder' bindtap='order'>立即预约</button>
+
+    <toast hidden="{{toastShow}}">预约中...</toast>
+  </view>
+</view>

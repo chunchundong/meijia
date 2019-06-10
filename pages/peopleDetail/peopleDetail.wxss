@@ -1,0 +1,33 @@
+/* pages/peopleDetail/peopleDetail.wxss */
+.head image{
+  width: 100%;
+  height: 350rpx;
+}
+.contant{
+  padding: 40rpx;
+}
+.title{
+  text-align: center;
+  font-weight: bold;
+}
+.msg{
+  color: #969696;
+  font-size: 30rpx;
+  padding-top: 20rpx;
+}
+.title_h1{
+  padding: 40rpx 0 30rpx;
+}
+.lists{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #969696;
+}
+.price{
+  color: #d24a58;
+  font-weight: bold;
+}

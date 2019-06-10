@@ -1,0 +1,9 @@
+/**app.wxss**/
+.buyOrOrder{
+  background-color: #d24a58;
+  color: white;
+  margin-bottom: 20rpx;
+}
+.content{
+  padding: 20rpx 40rpx;
+}

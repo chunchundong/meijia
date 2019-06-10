@@ -1,0 +1,20 @@
+<!--pages/about/index.wxml-->
+<view class='container'>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 一键登录 </button>
+    <block wx:else>
+      <view class="userinfo">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+      </view>
+
+      <view class='location'>
+        <view class='title'>【位置管理】</view>
+        <view class='dizhi'>好久开始的粉红色的惊魂甫定</view>
+        <button bindtap='getLocaltion'>获取当前位置</button>
+      </view>
+    </block>
+  
+  <button open-type="share">分享好友</button>
+
+</view>
